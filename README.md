@@ -91,3 +91,31 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+
+
+<div class="container">
+    <div class="wrapper">
+      <div class="row">
+        <div class="wrapper-screen-2">
+
+        </div>
+        <div class="wrapper-screen">
+          <div class="container">
+            <form action="#">
+              <div class="row">
+                <div class="col-6">
+                  <div class="label">
+                    Tip Amount
+                  </div>
+                </div>
+                <div class="col-6">
+                  <input type="text" name="" id="" class="value">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>****

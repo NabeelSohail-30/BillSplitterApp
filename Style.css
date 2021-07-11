@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    margin-bottom: 24px;
+    color: hsl(183, 100%, 15%);
+}
+
+main .container {
+    display: flex;
+    width: 50%;
+    height: 50vh;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+main .container>div {
+    width: 50%;
+    margin: 30px;
+}
+
+.bill-screen {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.bill-screen span {
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(186, 14%, 43%);
+}
+
+.bill-screen input {
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding: 0 7px;
+    text-align: right;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 900;
+    font-size: 24px;
+    border-radius: 4px;
+    outline-color: hsl(172, 67%, 45%);
+}
+
+.bill-screen input::placeholder {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.bill-screen .money div {
+    position: relative;
+}
+
+.bill-screen .people div {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    padding: 5px 10px;
+    font-size: 1.2em;
+}
+
+.bill-screen .tip .tip-select {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    gap: 10px;
+
+}
+
+.bill-screen .tip .tip-select div {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.bill-screen .tip .tip-select div input {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.bill-screen .tip .tip-select div:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.bill .tip .tip-select div .active {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.result {
+    background-color: hsl(183, 100%, 15%);
+    padding: 20px;
+    border-radius: 10px;
+    color: hsl(189, 41%, 97%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.result .container-fluid {
+    margin-top: 20px;
+}
+
+.result span {
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+.result .sub {
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(186, 14%, 43%);
+}
+
+.result .dollar {
+    background-color: hsl(183, 100%, 15%);
+    font-size: 40px;
+    font-weight: bolder;
+    color: hsl(172, 67%, 45%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    margin: 0px auto;
+    text-align: right;
+    line-height: 40px;
+}
+
+.result .dollar::placeholder {
+    font-size: 40px;
+    font-weight: bolder;
+    color: hsl(172, 67%, 45%);
+}
+
+.result button {
+    background-color: hsl(172, 67%, 45%);
+    color: var(--Very_dark_cyan);
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+}

@@ -1,44 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js" defer></script>
+    <title>Frontend Mentor | Tip calculator app</title>
 </head>
+
 <body>
+    <main>
+        <h1>SPLI<br>TTER</h1>
+        <div class="container">
+            <div class="bill-screen">
+                <div class="money">
+                    <span>Bill</span>
+                    <div>
+                        <i class="fa fa-dollar icon"></i>
+                        <input type="text" id="input-price" placeholder="0">
+                    </div>
+                </div>
 
-  Bill
+                <div class="tip">
+                    <span>Select Tip %</span>
+                    <br>
+                    <div class="tip-select">
+                        <div value="5">5%</div>
+                        <div value="10">10%</div>
+                        <div value="15">15%</div>
+                        <div value="25">25%</div>
+                        <div value="50">50%</div>
+                        <div><input id="custom-tip" type="text" placeholder="Custom"></div>
+                    </div>
+                </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+                <div class="people">
+                    <span>Number of People</span>
+                    <div>
+                        <i class="fa fa-user icon"></i>
+                        <input type="text" id="num-of-people" placeholder="0">
+                    </div>
+                </div>
+            </div>
+            <div class="result">
+                <div class="contaner">
+                    <div class="tip-amount">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span>Tip Amount</span>
+                                    <br>
+                                    <span class="sub">/ Person</span>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="dollar" id="tip-total-amount" placeholder="$0.00">
 
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="total">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span>Total</span>
+                                    <br>
+                                    <span class="sub">/ Person</span>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="dollar total-amount" id="tip-total-amount"
+                                        placeholder="$0.00">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>RESET</button>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
