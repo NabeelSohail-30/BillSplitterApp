@@ -14,40 +14,51 @@
 
 <body>
     <main>
-        <h1>SPLI<br>TTER</h1>
+        <h1>BILL SPLITTER</h1>
         <div class="container">
             <div class="bill-screen">
                 <div class="money">
-                    <span>Bill</span>
+                    <span>Bill Amount</span>
                     <div>
-                        <i class="fa fa-dollar icon"></i>
-                        <input type="text" id="input-price" placeholder="0">
+                        <input type="text" class="input-price" id="BillAmount" placeholder="0"
+                            onchange="CalculateBill();">
                     </div>
                 </div>
 
                 <div class="tip">
-                    <span>Select Tip %</span>
-                    <br>
-                    <div class="tip-select">
-                        <div value="5">5%</div>
-                        <div value="10">10%</div>
-                        <div value="15">15%</div>
-                        <div value="25">25%</div>
-                        <div value="50">50%</div>
-                        <div><input id="custom-tip" type="text" placeholder="Custom"></div>
+                    <span>Tip Amount</span>
+                    <div>
+                        <input type="text" class="input-price" placeholder="0" id="TipAmount"
+                            onchange="CalculateBill()">
                     </div>
                 </div>
 
                 <div class="people">
                     <span>Number of People</span>
+                    <span class="span-warning" style="color: red; font-size: 8px;">People Can't be Zero</span>
                     <div>
                         <i class="fa fa-user icon"></i>
-                        <input type="text" id="num-of-people" placeholder="0">
+                        <input type="text" id="Person" placeholder="0" onchange="CalculateBill();">
                     </div>
                 </div>
             </div>
+
             <div class="result">
                 <div class="contaner">
+                    <div class="total">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span>Total Bill Amount</span>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="dollar total-amount" id="total-amount" placeholder="$0.00"
+                                        disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
                     <div class="tip-amount">
                         <div class="container-fluid">
                             <div class="row">
@@ -57,8 +68,7 @@
                                     <span class="sub">/ Person</span>
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" class="dollar" id="tip-total-amount" placeholder="$0.00">
-
+                                    <input type="text" class="dollar" id="TipPerPerson" placeholder="$0.00" disabled>
                                 </div>
                             </div>
                         </div>
@@ -73,14 +83,15 @@
                                     <span class="sub">/ Person</span>
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" class="dollar total-amount" id="tip-total-amount"
-                                        placeholder="$0.00">
+                                    <input type="text" class="dollar total-amount" id="BillAmountPerPerson"
+                                        placeholder="$0.00" disabled>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button>RESET</button>
+
+                <button onclick="Reset();">Reset</button>
             </div>
         </div>
     </main>
