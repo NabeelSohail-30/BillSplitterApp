@@ -1,5 +1,10 @@
 function Reset() {
-    form.reset()
+    document.getElementById('BillAmount').value = null;
+    document.getElementById('TipAmount').value = null;
+    document.getElementById('Person').value = null;
+    document.getElementById('total-amount').value = null;
+    document.getElementById('TipPerPerson').value = null;
+    document.getElementById('BillAmountPerPerson').value = null;
 }
 
 function CalculateBill() {
