@@ -20,7 +20,7 @@ function CalculateBill() {
     }
 
     TotalAmount.value = Number(BillAmount + TipAmount);
-    TipPerPerson.value = (TipAmount / NumOfPerson);
+    TipPerPerson.value = (TipAmount);
     BillAmountPerPerson.value = (TotalAmount.value / NumOfPerson);
     //console.log(BillAmount + TipAmount);
 }
